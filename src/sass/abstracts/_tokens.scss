@@ -6,8 +6,8 @@ $active-theme: $light;
 $enable-media-query-dark-mode: false;
 
 // Contextual
-$color-text-default: $color-neutral-700;
-$color-background-default: $color-primary-100;
+$color-text-default: $color-neutral-1000;
+$color-background-default: $color-neutral-000;
 $color-text-interactive-default: $color-accent-400;
 $color-text-interactive-hover: $color-accent-500;
 
@@ -40,17 +40,18 @@ $body-font-weight: $font-weight-default;
 $body-text-color: $color-text-default;
 $body-background-color: $color-background-default;
 
-$link-color: $color-text-interactive-default;
-$link-color-hover: $color-text-interactive-hover;
+$link-color: $color-text-default;
+$link-color-hover: $color-text-default;
 
-$heading-font-family: $font-family-accent;
+$heading-font-family: $font-family-heading;
 $heading-color-default: $color-neutral-900;
 $heading-font-weight: $font-weight-bold;
 $heading-letter-spacing: $letter-spacing-loose;
 $heading-line-height: 1.1;
 $heading-text-transform: uppercase;
+$heading-text-align: center;
 
-$heading-1-font-size: $font-size-900;
+$heading-1-font-size: $font-size-500;
 $heading-1-color: $heading-color-default;
 $heading-2-font-size: $font-size-800;
 $heading-2-color: $heading-color-default;
@@ -62,7 +63,7 @@ $grid-gap: $size-6;
 $flex-group-gap: $size-4;
 
 $hero-padding-block: clamp(15rem, 15vh, 20rem);
-$section-padding-block: clamp(5rem, 10vh, 6rem);
+$section-padding-block: 2.5rem;
 
 $container-min-margin-inline: $size-4;
 $container-max-width: 64rem;
@@ -70,13 +71,18 @@ $container-max-width-narrow: 40rem;
 $container-max-width-wide: 75rem;
 
 // site header
-$site-header-background-color: $color-primary-300;
+$site-header-background-color: $color-neutral-000;
 $site-header-color: $color-neutral-900;
-$site-header-padding: $size-8 0;
+$site-header-border-bottom: none;
+$site-header-box-shadow: 0px 4px 8px 0px #c8c8c840;
+$site-header-padding: $size-4 0;
 $site-header-margin: 0;
-$site-header-jusitifcation-small-screens: center;
+$site-header-jusitifcation-small-screens: space-between;
 $site-header-jusitifcation-large-screens: space-between;
 $site-header-alignment: center;
+$site-header-logo-font-family: SB-HyperX;
+$site-header-logo-font-size: $size-8;
+$site-header-logo-font-weight: 400;
 
 //navigation
 $navigation-color: $site-header-color;
@@ -88,7 +94,7 @@ $navigation-font-family: $body-font-family;
 $navigation-font-weight: $body-font-weight;
 
 // site footer
-$footer-background-color: $color-primary-300;
+$footer-background-color: $color-background-default;
 $footer-text-color: $color-primary-900;
 $footer-link-color: $color-neutral-100;
 $footer-link-color-hover: $color-primary-200;
@@ -100,25 +106,26 @@ $button-font-family: $body-font-family;
 $button-font-size: $font-size-400;
 $button-font-weight: $font-weight-bold;
 $button-text-transform: uppercase;
-$button-padding: 0.75em 2em;
+$button-padding: 0.2em 0.5em;
 $button-border: 0;
-$button-border-radius: $border-radius-1;
-
+$button-border-radius: 0.3125rem;
+$button-shadow: 0px 4px 4px 0px #42454a33;
 $button-accent-color: $color-neutral-100;
 $button-accent-background: $color-accent-400;
 $button-accent-color-hover: $color-neutral-100;
 $button-accent-background-hover: $color-accent-500;
 $button-primary-color: $color-neutral-100;
-$button-primary-background: $color-primary-700;
+$button-primary-background: #ec8e00;
 $button-primary-color-hover: $color-neutral-100;
-$button-primary-background-hover: $color-primary-800;
+$button-primary-background-hover: $color-primary-400;
 
 // cards
 $card-flow-spacing: $size-2;
-$card-padding: $size-8;
-$card-shadow: $box-shadow-1;
-$card-border-radius: $border-radius-2;
-$card-background-default: $color-primary-100;
+$card-padding: $size-5 $size-2;
+$card-shadow: 0px 6px 5px 0px $color-neutral-200;
+$card-border: 1px solid $color-neutral-100;
+$card-border-radius: $border-radius-1;
+$card-background-default: transparent;
 $card-color-default: $body-text-color;
 $card-font-family: $body-font-family;
 $card-line-height: 1.25;
@@ -135,13 +142,13 @@ $form-input-color: $body-text-color;
 $form-input-font-family: $body-font-family;
 $form-input-font-weight: $font-weight-semi-bold;
 $form-input-font-size: $body-font-size;
-$form-input-background-color: $color-neutral-100;
-$form-input-border-default: 3px solid $color-primary-200;
+$form-input-background-color: $color-neutral-000;
+$form-input-border-default: 2px solid $color-neutral-400;
 $form-input-border-focus: 3px solid $color-primary-400;
 $form-input-padding: $size-3;
 $form-input-border-radius: $border-radius-1;
 
-$form-placeholder-color: $color-primary-300;
+$form-placeholder-color: $color-neutral-300;
 $form-placeholder-font-family: $form-input-font-family;
 $form-placeholder-font-weight: $form-input-font-weight;
 $form-placeholder-font-size: $body-font-size;

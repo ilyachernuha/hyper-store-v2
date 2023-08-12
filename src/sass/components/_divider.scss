@@ -1,0 +1,15 @@
+.divider {
+  height: 0.125rem;
+  width: 12rem;
+  background-color: #000;
+
+  &[data-type="accent"] {
+    background-color: #f2994a;
+    margin: 0 auto;
+  }
+
+  &[data-type="right"] {
+    display: float;
+    float: right;
+  }
+}

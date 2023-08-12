@@ -1,0 +1,9 @@
+---
+interface Props {
+  type: "primary" | "accent" | "right";
+}
+
+const { type } = Astro.props;
+---
+
+<div class="divider" data-type={type}></div>

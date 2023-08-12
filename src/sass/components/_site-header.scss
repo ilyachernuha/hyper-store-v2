@@ -4,6 +4,15 @@
   color: $site-header-color;
   background-color: $site-header-background-color;
   padding: $site-header-padding;
+  border-bottom: $site-header-border-bottom;
+  box-shadow: $site-header-box-shadow;
+
+  &__logo {
+    font-family: $site-header-logo-font-family;
+    font-weight: $site-header-logo-font-weight;
+    font-size: $site-header-logo-font-size;
+    text-decoration: none;
+  }
 
   &__inner {
     display: flex;

@@ -6,6 +6,12 @@
   font-family: $navigation-font-family;
   font-weight: $navigation-font-weight;
 
+  display: none;
+
+  @include mq(medium) {
+    display: flex;
+  }
+
   a {
     color: $navigation-color;
     text-decoration: $navigation-link-text-decoration;

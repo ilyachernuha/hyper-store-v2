@@ -1,32 +1,26 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import "../sass/main.scss";
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Product from "../components/Product.astro";
+import Description from "../components/Description.astro";
+import Order from "../components/Order.astro";
+import Features from "../components/Features.astro";
+import Reviews from "../components/Reviews.astro";
+import Divider from "../components/UI/Divider.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main class="container">
-    <ul role="list">
-      <Card
-        href="https://docs.astro.build/"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docs."
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Integrations"
-        body="Supercharge your project with new frameworks and libraries."
-      />
-      <Card
-        href="https://astro.build/themes/"
-        title="Themes"
-        body="Explore a galaxy of community-built starter themes."
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-    </ul>
+<Layout title="Навушники Cloud Stinger Core | Hyper Store">
+  <Header />
+  <main>
+    <Product />
+    <Divider type="accent" />
+    <Description />
+    <Divider />
+    <Features />
+    <Divider type="right" />
+    <Reviews />
+    <Divider />
+    <Order />
   </main>
 </Layout>

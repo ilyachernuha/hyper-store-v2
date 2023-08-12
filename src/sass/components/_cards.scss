@@ -1,7 +1,8 @@
 @use "../abstracts/" as *;
 
 .card {
-  display: grid;
+  display: flex;
+  align-items: center;
   gap: $card-flow-spacing;
   padding: $card-padding;
   background-color: $card-background-default;
@@ -10,6 +11,13 @@
   line-height: $card-line-height;
   box-shadow: $card-shadow;
   border-radius: $card-border-radius;
+  border: $card-border;
+
+  img {
+    padding: 0.325rem;
+    background-color: #42454a;
+    border-radius: 50%;
+  }
 
   &__heading {
     @include heading($card-heading-font-size, $card-heading-color-default);

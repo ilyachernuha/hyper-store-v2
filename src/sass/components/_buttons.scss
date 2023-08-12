@@ -13,6 +13,7 @@
   padding: $button-padding;
   border: $button-border;
   border-radius: $button-border-radius;
+  box-shadow: $button-shadow;
   transition: 275ms ease;
 
   &[data-type="accent"] {
