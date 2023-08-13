@@ -1,10 +1,36 @@
 @use "../abstracts" as *;
 
-.contact-form {
-  .form-group {
-    display: grid;
+.order {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  place-items: center;
+
+  &__title {
+    color: #2d3033;
+    font-family: Ubuntu;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .button {
+    height: 2.0625rem;
+    place-items: center;
   }
 }
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  .form-group {
+    display: grid;
+    gap: $form-group-spacing;
+  }
+}
+
 label {
   color: $form-label-color;
   font-family: $form-label-font-family;
@@ -20,10 +46,13 @@ input:not(.button) {
   padding: $form-input-padding;
   border: $form-input-border-default;
   border-radius: $form-input-border-radius;
+  max-width: 7.75rem;
+  height: 2.0625rem;
 }
 
 ::placeholder {
   color: $form-placeholder-color;
   font-weight: $form-placeholder-font-weight;
   font-family: $form-placeholder-font-family;
+  font-size: $form-placeholder-font-size;
 }

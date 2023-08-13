@@ -85,26 +85,16 @@
 .reviews {
   --swiper-navigation-color: #000;
   &__slide {
-    padding: 0.8rem;
-    border-radius: 0.625rem;
-    border: 1px solid #42454a;
+    display: grid;
+    place-content: center;
+    img {
+      padding: 0.8rem;
+      border-radius: 0.625rem;
+      border: 1px solid #42454a;
+    }
   }
-}
-
-.order {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  &__title {
-    color: #2d3033;
-    font-family: Ubuntu;
-    font-size: 1.75rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-  }
-  &__form {
-    max-width: 7.75rem;
+  &__gallery-container {
+    display: flex;
+    gap: 1rem;
   }
 }

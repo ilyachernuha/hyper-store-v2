@@ -5,7 +5,7 @@ import { Pagination, Navigation } from "swiper/modules";
 
 import "swiper/scss";
 import "swiper/scss/pagination";
-import "swiper/scss/navigation";
+// import "swiper/scss/navigation";
 
 const swiper = new Swiper("#swiper", {
   direction: "horizontal",
