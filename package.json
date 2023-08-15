@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "gh-pages": "astro build --site https://ilyachernuha.github.io --base /hyper-store-v2"
   },
   "dependencies": {
     "astro": "^2.9.6",
