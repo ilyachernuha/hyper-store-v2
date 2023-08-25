@@ -1,0 +1,41 @@
+@use "base";
+@use "components";
+@use "layout";
+@use "utilities";
+@use "vendor";
+
+html,
+body {
+  height: 100vh;
+}
+
+.order {
+  text-align: center;
+  display: grid;
+  gap: 4.7rem;
+  place-content: center;
+  place-items: center;
+  padding-block-start: 9.5rem;
+  color: #2d3033;
+  &__title {
+    font-family: Ubuntu;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  &__body {
+    font-family: Source Sans 3;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    opacity: 0.0325;
+  }
+}
