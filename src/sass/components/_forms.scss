@@ -1,25 +1,5 @@
 @use "../abstracts" as *;
 
-.order {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  place-items: center;
-
-  &__title {
-    color: #2d3033;
-    font-family: Ubuntu;
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-  }
-  .button {
-    height: 2.0625rem;
-    place-items: center;
-  }
-}
-
 .order-form {
   display: flex;
   flex-direction: column;

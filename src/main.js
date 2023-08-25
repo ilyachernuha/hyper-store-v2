@@ -12,9 +12,13 @@ const swiper = new Swiper("#swiper", {
   slidesPerView: 1,
   spaceBetween: 0,
   // autoHeight: true,
-  modules: [Pagination],
+  modules: [Pagination, Navigation],
   pagination: {
     el: ".swiper-pagination",
+  },
+  navigation: {
+    prevEl: ".product__button-prev",
+    nextEl: ".product__button-next",
   },
 });
 

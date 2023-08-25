@@ -1,7 +1,12 @@
 ---
+import "../sass/order.scss";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Навушники Cloud Stinger Core | Hyper Store">
-  <main></main>
+  <main class="order">
+    <h1 class="order__title">Дякуємо!</h1>
+    <p class="order__body">Наш менеджер зв’яжеться з вами протягом 30 хв.</p>
+    <img class="order__bg" src=`${import.meta.env.BASE_URL}images/hyperx_cloud_stinger_core_wireless_7.1_01_main_300x.jpg`>
+  </main>
 </Layout>
